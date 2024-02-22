@@ -49,13 +49,6 @@ struct Ray{
     float tMin, tMax;
 };
 
-struct AABB {
-      vec3 minP;
-      vec3 maxP;
-};
-
-
-
 // Taken from professor's GitHub
 Ray getRay(vec2 pixel)
 {
@@ -148,19 +141,6 @@ vec3 computePBR(Sphere sphere, Ray ray, Hit hit)
       vec3 F0_metal;
       vec3 F0_dielectric = vec3(.04, .04, .04);
 
-      // Metals
-      if (sphere.mat.mat_type == 1)
-            F0_metal = vec3(1.0, 1.0, 1.0);
-      else if (sphere.mat.mat_type == 2)
-            F0_metal = vec3(1.0, 1.0, 1.0);
-      else if (sphere.mat.mat_type == 3)
-            F0_metal = vec3(1.0, 1.0, 1.0);
-      else if (sphere.mat.mat_type == 4)
-            F0_metal = vec3(1.0, 1.0, 1.0);
-      else if (sphere.mat.mat_type == 5)
-            F0_metal = vec3(1.0, 1.0, 1.0);
-
-      vec3 material_color = F0_metal;
       vec3 F0 = mix(F0_dielectric, F0_metal, sphere.mat.metallic);
 
       vec3 F = F0 + (1 - F0) * pow((1 - clamp(dot(H, V), 0, 1)), 5);
@@ -186,8 +166,6 @@ vec3 pColor(Sphere sphere, vec2 pixel)
       Ray ray = getRay(pixel);
 
       Sphere closest_sphere = compute_nio(sphere, ray);
-
-      Hit hit_sphere;
 
       Material hit_material;
 
@@ -267,7 +245,6 @@ void main()
 
       Ray ray = getRay(gl_FragCoord.xy);
       Sphere closest_sphere = compute_nio(sphere, ray);
-      Hit hit = compute_sip(closest_sphere, ray);
 
       outColor = vec4(pColor(sphere, gl_FragCoord.xy), 1.0);
 }
