@@ -1,6 +1,7 @@
 Programs from my past/current courses at the University of Central Florida
 
 Courses:
+
 COP3223 - Introduction to Programming in C
 COP3502 - Computer Science I
 COP3503 - Computer Science II
