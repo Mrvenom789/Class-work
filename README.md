@@ -1,19 +1,17 @@
-Assignment 2 - create gl context and load a 3D model
+Programs from my past/current courses at the University of Central Florida
 
-Assignment 3 - Render a 3D model
+Courses:
 
-Assignment 4 - Transform the model's rotation, translation, and scaling. Create gui to control these varibles
+COP3223 - Introduction to Programming in C
 
-Assignment 5 - Implement interactive camera that orbits around center
+COP3502 - Computer Science I
 
-Assignment 6 - Create 2 objects using two different shaders in two different viewports
+COP3503 - Computer Science II
 
-Assignment 7 - Implement diffuse and specular materials and add ambient lighting
+CAP4611 - Algorithms for Machine Learning
 
-Assignment 8 - Implement toon shading and allow switching between diffuse and toon shading
+CAP4630 - Artificial Intelligence
 
-Assignment 9 - Add textures to 3D objects
+CAP4720 - Computer Graphics
 
-Assignment 10 - Implement a shadow mapping algorithm
-
-Assignment 11 - implement microfacet specular BRDF model
+CAP5415 - Computer Vision
