@@ -4,6 +4,8 @@ Courses:
 
 COP3223 - Introduction to Programming in C
 
+COP3330 - Object Oriented Programming
+
 COP3502 - Computer Science I
 
 COP3503 - Computer Science II
