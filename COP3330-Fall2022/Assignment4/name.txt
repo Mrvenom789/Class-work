@@ -1,0 +1,12 @@
+11
+John true
+Sally false
+Sarah false
+Mike false
+George false
+Rachel false
+EEEEEE false
+Ray true
+Juan true
+Joe true
+aaahh false
